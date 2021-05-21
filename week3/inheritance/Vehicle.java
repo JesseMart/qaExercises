@@ -7,12 +7,14 @@ public abstract class Vehicle {
 	private String manufacturer;
 	private double price;
 	private int id;
+	private String typeOfVehicle;
 	
-	public Vehicle(String model, String manufacturer, int id) {
+	public Vehicle(String model, String manufacturer, int id, String typeOfVehicle) {
 		
 		this.model = model;
 		this.manufacturer = manufacturer;
 		this.id = id;
+		this.typeOfVehicle = typeOfVehicle;
 	}
 	
 	//METHODS
@@ -25,8 +27,11 @@ public abstract class Vehicle {
 	public double getPrice() {
 		return price;
 	}
-	public int id() {
+	public Integer getId() {
 		return id;
+	}
+	public String getTypeOfVehicle() {
+		return typeOfVehicle;
 	}
 	
 }

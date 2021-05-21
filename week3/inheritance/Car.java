@@ -2,13 +2,13 @@ package inheritance;
 
 public class Car extends Vehicle {
 
-	public Car(String model, String manufacturer, int id) {
-		super(model, manufacturer, id);
+	public Car(String model, String manufacturer, Integer id, String typeOfVehicle) {
+		super(model, manufacturer, id, typeOfVehicle);
 		// TODO Auto-generated constructor stub
 	}
 
 	public void carDetails() {
-		System.out.println("Model: "+ this.getModel() + "Manufacturer: " + this.getManufacturer());
+		System.out.println("MODEL: "+ this.getModel() + "MANUFACTURER: " + this.getManufacturer() + "VEHICLE TYPE: " + this.getTypeOfVehicle());
 	}
 	
 
